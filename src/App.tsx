@@ -87,6 +87,7 @@ function App() {
     const counterTypeChangeHandler = () => {
         setSplitCounterType(!splitCounterType)
         maxStartCounterValueSetter()
+        settingsChangeHandler(false)
     }
 
     let counterTypeToShow = splitCounterType ? (<SplitCounter settingsOn={settingsOn}
